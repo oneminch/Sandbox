@@ -1,13 +1,17 @@
 #app {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	@apply w-1/2;
+	@apply sm:w-3/5 w-11/12 transition-all text-zinc-200;
 }
 
 .exp-link {
-	@apply block w-full max-w-96 h-12 flex justify-between items-center p-4 text-gray-700 font-semibold font-mono my-4 bg-light-50 border-1 border-solid border-gray-300 cursor-pointer rounded-md shadow-sm;
+	@apply block w-full max-w-lg min-h-24 h-auto flex items-center justify-between p-4 py-2 font-semibold font-mono my-4 mt-6 bg-zinc-700 border-2 border-solid border-zinc-600 cursor-pointer rounded-md;
 }
 
-.exp-link > svg {
-	@apply w-5 h-5;
+.exp-link svg {
+	@apply w-5 h-5 flex-shrink-0 stroke-current;
+}
+
+.tag {
+	@apply text-center inline-block rounded-full mr-1 mb-2 bg-zinc-800 text-base font-normal px-4 py-0.5;
 }
