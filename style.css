@@ -1,8 +1,13 @@
 #app {
-	font-family: Avenir, Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	text-align: center;
-	color: #2c3e50;
-	margin-top: 60px;
+	@apply w-1/2;
+}
+
+.exp-link {
+	@apply block w-full max-w-96 h-12 flex justify-between items-center p-4 text-gray-700 font-semibold font-mono my-4 bg-light-50 border-1 border-solid border-gray-300 cursor-pointer rounded-md shadow-sm;
+}
+
+.exp-link > svg {
+	@apply w-5 h-5;
 }
