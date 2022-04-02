@@ -1,5 +1,5 @@
 {
-  "name": "landing-page",
+  "name": "parallax",
   "private": true,
   "version": "0.0.0",
   "scripts": {
@@ -8,12 +8,9 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^2.8.0",
-    "vite-plugin-windicss": "^1.8.3",
-    "windicss": "^3.5.1"
+    "vite": "^2.9.0"
   },
   "dependencies": {
-    "locomotive-scroll": "^4.1.4",
-    "sal.js": "^0.8.5"
+    "locomotive-scroll": "^4.1.4"
   }
 }

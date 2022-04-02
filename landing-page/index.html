@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="./style.css" />
 		<title>Vite App</title>
 	</head>
-	<body class="w-11/12 bg-stone-100 mx-auto">
+	<body class="w-11/12 bg-stone-100 mx-auto" data-scroll-container>
 		<header class="w-full py-6 px-8 mx-auto mt-4 mb-8">
 			<nav
 				class="flex justify-between items-center text-lg text-stone-800 font-bold">
@@ -92,20 +92,47 @@
 
 			<div class="w-full flex justify-between mb-10">
 				<div
-					class="w-[29%] h-125 bg-stone-50 border-1 border-gray-300 rounded-2xl"></div>
+					data-sal="slide-up"
+					data-sal-delay="300"
+					data-sal-easing="ease-out-back"
+					data-sal-repeat
+					class="threes w-[29%] h-125 bg-stone-50 border-1 border-gray-300 rounded-2xl"></div>
 				<div
-					class="w-[29%] h-125 bg-stone-50 border-1 border-gray-300 rounded-2xl"></div>
+					data-sal="slide-up"
+					data-sal-delay="400"
+					data-sal-easing="ease-out-back"
+					data-sal-repeat
+					class="threes w-[29%] h-125 bg-stone-50 border-1 border-gray-300 rounded-2xl"></div>
 				<div
-					class="w-[29%] h-125 bg-stone-50 border-1 border-gray-300 rounded-2xl"></div>
+					data-sal="slide-up"
+					data-sal-delay="500"
+					data-sal-easing="ease-out-back"
+					data-sal-repeat
+					class="threes w-[29%] h-125 bg-stone-50 border-1 border-gray-300 rounded-2xl"></div>
 			</div>
 
 			<div class="w-full flex justify-between mb-10">
-				<div class="gradient w-[49%] h-125 rounded-2xl"></div>
-				<div class="gradient w-[49%] h-125 rounded-2xl"></div>
+				<div class="twos w-[49%] h-125 rounded-2xl"></div>
+				<div class="twos w-[49%] h-125 rounded-2xl"></div>
+			</div>
+
+			<div
+				id="sal"
+				data-sal="slide-up"
+				data-sal-delay="300"
+				data-sal-easing="ease-out-back"></div>
+
+			<div data-scroll-section>
+				<h1 data-scroll>Hey</h1>
+				<p data-scroll>👋</p>
+			</div>
+			<div data-scroll-section>
+				<h2 data-scroll data-scroll-speed="1">What's up?</h2>
+				<p data-scroll data-scroll-speed="2">😬</p>
 			</div>
 		</main>
 
-		<footer class="w-full h-96"></footer>
+		<footer class="w-full h-96 bg-stone-900"></footer>
 		<script type="module" src="/main.js"></script>
 	</body>
 </html>

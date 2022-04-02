@@ -2,8 +2,10 @@ import "virtual:windi.css";
 import "./style.css";
 
 const experiments = {
+	"css-tinker": ["css", "fundamentals", "content"],
 	"drag-n-drop": ["drag-and-drop", "vanilla-js", "windi-css"],
-	"landing-page": ["parallax", "lightbox"]
+	"landing-page": ["parallax", "lightbox"],
+	"random-jokes": ["petite-vue", "water-css", "humor-api"]
 };
 
 // Render link and tags for each experiment
