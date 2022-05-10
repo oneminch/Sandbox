@@ -1,17 +1,26 @@
-#app {
-	font-family: Avenir, Helvetica, Arial, sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	text-align: center;
-	color: #2c3e50;
-	margin-top: 60px;
-}
-
 * {
 	transition: all 0.3s;
 	font-weight: 500;
 }
 
+body {
+	width: 85%;
+	background: #000;
+	margin: 0 auto;
+	padding-bottom: 2rem;
+}
+
+:root {
+	--green-color: #00fa9a;
+	--blue-color: #1e90ff;
+	--purple-color: #7b68ee;
+	--pink-color: #ff69b4;
+	--red-color: #dc143c;
+	--orange-color: #ffa500;
+	--yellow-color: #ffd700;
+
+	--dark-color: #202b38;
+}
 /* --- Counters --- */
 
 .css-content > ul li::after {
@@ -58,3 +67,138 @@
 /* .css-element > blockquote::after {
 	background: -moz-element(text);
 } */
+
+/* --- Single Div Experiments */
+
+#single-div > .cameroon-flag,
+#single-div > .ethiopian-flag,
+#single-div > .sudan-flag {
+	width: 150px;
+	height: 100px;
+	position: relative;
+	border-radius: 2.5px;
+	overflow: hidden;
+}
+
+#single-div > .ethiopian-flag {
+	background-color: gold;
+}
+
+#single-div > .ethiopian-flag::before,
+#single-div > .ethiopian-flag::after {
+	content: "";
+	width: 100%;
+	height: 33%;
+	position: absolute;
+	left: 0;
+}
+
+#single-div > .ethiopian-flag::before {
+	top: 0;
+	background-color: forestgreen;
+}
+
+#single-div > .ethiopian-flag::after {
+	bottom: 0;
+	background-color: red;
+}
+
+#single-div > .sudan-flag {
+	margin-top: 50px;
+	background: linear-gradient(#d21034 33%, #fff 33% 66%, #000 33%);
+}
+
+#single-div > .sudan-flag::before {
+	content: "";
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-bottom: 50px solid transparent;
+	border-left: 50px solid #007229;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	transform: translateY(-50%);
+}
+
+#single-div > .cameroon-flag {
+	margin-top: 50px;
+	background: linear-gradient(
+		to right,
+		#007a5e 33%,
+		#ce1126 33% 66%,
+		#fcd116 33%
+	);
+}
+
+#single-div > .cameroon-flag::before {
+	content: " \272D";
+	font-size: 2rem;
+	width: 100%;
+	text-align: center;
+	color: #fcd116;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	transform: translateY(-50%);
+}
+
+/* --- CSS Gradients --- */
+
+#css-gradients > .rainbow {
+	width: 100%;
+	height: 25px;
+	margin: 0 auto;
+	background: linear-gradient(
+		to right,
+		var(--green-color) 7.5%,
+		var(--blue-color) 7.5% 15%,
+		var(--purple-color) 15% 22.5%,
+		var(--pink-color) 22.5% 30%,
+		var(--red-color) 30% 37.5%,
+		var(--orange-color) 37.5% 45%,
+		var(--yellow-color) 45% 55%,
+		var(--orange-color) 55% 62.5%,
+		var(--red-color) 62.5% 70%,
+		var(--pink-color) 70% 77.5%,
+		var(--purple-color) 77.5% 85%,
+		var(--blue-color) 85% 92.5%,
+		var(--green-color) 92.5% 100%
+	);
+}
+
+/* --- Cool Element Animations --- */
+
+#element-animations > button {
+	min-width: 100px;
+	height: 50px;
+	font-weight: bold;
+	position: relative;
+	border: 2.5px solid floralwhite;
+	border-radius: 1px;
+	overflow: hidden;
+	background: transparent;
+	color: floralwhite;
+}
+
+#element-animations > button::before {
+	transition: all 0.3s;
+	content: "";
+	position: absolute;
+	width: 0px;
+	height: 50px;
+	background: floralwhite;
+	bottom: 0;
+	left: 0;
+	z-index: -2;
+}
+
+#element-animations > button:hover {
+	color: var(--dark-color);
+}
+
+#element-animations > button:hover::before {
+	width: 100%;
+}

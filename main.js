@@ -13,7 +13,7 @@ Object.keys(experiments).forEach((exp) => {
 	let linkHTML = `
 		<a
 			class="exp-link"
-			href="./${exp}/dist/index.html"
+			href="./${exp}/index.html"
 			target="_blank"
 			rel="noopener noreferer">
 			<div class="w-full flex flex-col justify-between items-start">

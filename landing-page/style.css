@@ -1,13 +1,4 @@
-@import "./node_modules/locomotive-scroll/dist/locomotive-scroll.css";
-
-#app {
-	font-family: Avenir, Helvetica, Arial, sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	text-align: center;
-	color: #2c3e50;
-	margin-top: 60px;
-}
+/* @import "./node_modules/locomotive-scroll/dist/locomotive-scroll.css"; */
 
 .chevron {
 	@apply ml-[5px] w-[20px] h-[20px];
@@ -15,6 +6,10 @@
 
 .nav-link {
 	@apply mr-10 last:m-0 flex justify-between items-center;
+}
+
+.hero {
+	@apply w-full h-175 rounded-2xl;
 }
 
 .gradient {

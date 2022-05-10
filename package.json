@@ -11,5 +11,11 @@
     "vite": "^2.8.0",
     "vite-plugin-windicss": "^1.8.3",
     "windicss": "^3.5.1"
+  },
+  "dependencies": {
+    "axios": "^0.26.1",
+    "locomotive-scroll": "^4.1.4",
+    "petite-vue": "^0.4.1",
+    "sal.js": "^0.8.5"
   }
 }
