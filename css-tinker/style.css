@@ -202,3 +202,13 @@ body {
 #element-animations > button:hover::before {
 	width: 100%;
 }
+
+/* --- */
+
+details > summary {
+	list-style-type: "\25E5  ";
+}
+
+details[open] > summary {
+	list-style-type: "\25E2  ";
+}

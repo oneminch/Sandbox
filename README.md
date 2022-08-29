@@ -1,6 +1,6 @@
 # Miscellaneous
 
-Various small experiments with fundamental web technologies.
+Various micro experiments with fundamental web technologies and some external tools.
 
-* [Drag and Drop](./drag-n-drop/)
-* [Landing Page](./landing-page/)
+- [Drag and Drop](./drag-n-drop/)
+- [Landing Page](./landing-page/)
