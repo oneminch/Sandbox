@@ -14,10 +14,17 @@
   - details + summary styling - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details#customizing_the_disclosure_widget
   - Lesser-used elements - https://dev.to/eludadev/those-html-elements-you-never-use-16bi
 - CSS Tinkers
+  - properties
+    - background
+    - linear-gradient()
+    - box-shadow
   - Keyframes
-  - paper fold animation - Proton blog
+  - single div - https://hacks.mozilla.org/2014/09/single-div-drawings-with-css/
+  - Rotating pencil - penpot
   - scroll-snap-stop
-  - content - element()
+  - content
+    - add documentation like fragment link to each heading
+    - element()
   - custom video player
   - CSS Triangles - https://10015.io/tools/css-triangle-generator
   - clip path
@@ -42,19 +49,3 @@
   - Blob (JS)
   - Horizontal scrolling - https://alvarotrigo.com/blog/scroll-horizontally-with-mouse-wheel-vanilla-java/
   - Web APIs - https://dev.to/eludadev/12-rarely-used-javascript-web-apis-that-will-take-your-website-to-the-next-level-4lf1
-
-## TODO
-
-- Restructure main directory
-- Deploy subfolder to gh pages - https://gist.github.com/cobyism/4730490
-
-## Inspiration
-
-- Basecamp
-- DigitalOcean
-- GoFundMe
-- Sanity
-- Sentry
-- Storj
-- Stripe
-- TailwindCSS
