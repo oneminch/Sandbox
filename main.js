@@ -1,10 +1,13 @@
 import "virtual:windi.css";
 import "./style.css";
+import { createApp } from "petite-vue";
+import axios from "axios";
+
+/* ====================== Homepage ====================== */
 
 const experiments = {
 	"css-tinker": ["css", "fundamentals", "content"],
 	"drag-n-drop": ["drag-and-drop", "vanilla-js", "windi-css"],
-	"landing-page": ["parallax", "lightbox"],
 	"random-jokes": ["petite-vue", "water-css", "humor-api"]
 };
 
@@ -13,7 +16,7 @@ Object.keys(experiments).forEach((exp) => {
 	let linkHTML = `
 		<a
 			class="exp-link"
-			href="../${exp}/index.html"
+			href="./${exp}.html"
 			target="_blank"
 			rel="noopener noreferer">
 			<div class="w-full flex flex-col justify-between items-start">
@@ -46,3 +49,87 @@ Object.keys(experiments).forEach((exp) => {
 
 	document.querySelector("#app").innerHTML += linkHTML;
 });
+
+/* ====================== Drag & Drop ====================== */
+
+const cards = document.querySelectorAll(".card");
+
+cards.forEach((card) => {
+	card.addEventListener("dragstart", (e) => {
+		e.dataTransfer.setData("text/plain", e.target.id);
+	});
+});
+
+document.addEventListener("drop", (e) => {
+	e.preventDefault();
+	if (e.target.classList.contains("dropzone")) {
+		e.target.appendChild(e.dataTransfer.mozSourceNode);
+		e.target.classList.remove("bg-gray-200");
+		e.target.classList.add("bg-gray-100");
+	}
+});
+
+document.addEventListener("dragleave", (e) => {
+	e.preventDefault();
+	if (e.target.classList.contains("dropzone")) {
+		e.target.classList.remove("bg-gray-200");
+		e.target.classList.add("bg-gray-100");
+	}
+});
+
+document.addEventListener("dragover", (e) => {
+	e.preventDefault();
+	if (e.target.classList.contains("dropzone")) {
+		e.target.classList.remove("bg-gray-100");
+		e.target.classList.add("bg-gray-200");
+	}
+});
+
+/* ====================== CSS Tinkers ====================== */
+
+// Smooth scrolling for table of contents
+document.querySelectorAll(".outline-link").forEach((link) =>
+	link.addEventListener("click", (e) => {
+		e.preventDefault();
+
+		window.scrollTo({
+			behavior: "smooth",
+			top:
+				document
+					.querySelector(e.currentTarget.attributes.href.nodeValue)
+					.getBoundingClientRect().top -
+				document.body.getBoundingClientRect().top -
+				5
+		});
+	})
+);
+
+/* ====================== Random Jokes ====================== */
+
+createApp({
+	joke: "",
+	modal: false,
+	get showQuote() {
+		return this.joke.length > 0;
+	},
+	// methods
+	hideModal() {
+		this.modal = false;
+	},
+	fetchNewJoke() {
+		let vm = this;
+		axios
+			.get(
+				"https://api.humorapi.com/jokes/random?api-key=c1be3de018d14210981b291d6e2b3dde"
+			)
+			.then(function (response) {
+				vm.joke = response.data.joke;
+			})
+			.catch(function (error) {
+				vm.modal = true;
+				console.log(error);
+			});
+	}
+}).mount();
+
+/* ====================== Drag & Drop ====================== */
