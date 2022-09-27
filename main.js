@@ -8,6 +8,7 @@ import axios from "axios";
 const experiments = {
 	"css-tinker": ["css", "fundamentals", "content"],
 	"drag-n-drop": ["drag-and-drop", "vanilla-js", "windi-css"],
+	"landing-page": ["parallax", "lightbox"],
 	"random-jokes": ["petite-vue", "water-css", "humor-api"]
 };
 
@@ -16,7 +17,7 @@ Object.keys(experiments).forEach((exp) => {
 	let linkHTML = `
 		<a
 			class="exp-link"
-			href="./${exp}.html"
+			href="./${exp}/index.html"
 			target="_blank"
 			rel="noopener noreferer">
 			<div class="w-full flex flex-col justify-between items-start">

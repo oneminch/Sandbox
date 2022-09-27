@@ -2,16 +2,16 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./style.css" />
 		<title>Drag-n-Drop Kanban</title>
 	</head>
 	<body>
-		<div id="drag-n-drop">
+		<div id="app">
 			<!-- dropzone 1 -->
 			<div id="dropzone-1" class="dropzone">
-				<h3 class="font-bold font-mono mb-2">To Do</h3>
+				<h3>To Do</h3>
 				<p id="card-1" class="card" draggable="true">Card 1</p>
 				<p id="card-2" class="card" draggable="true">Card 2</p>
 				<p id="card-3" class="card" draggable="true">Card 3</p>
@@ -21,14 +21,14 @@
 
 			<!-- dropzone 2 -->
 			<div id="dropzone-2" class="dropzone">
-				<h3 class="font-bold font-mono mb-2">Doing</h3>
+				<h3>Doing</h3>
 			</div>
 
 			<!-- dropzone 3 -->
 			<div id="dropzone-3" class="dropzone">
-				<h3 class="font-bold font-mono mb-2">Done</h3>
+				<h3>Done</h3>
 			</div>
 		</div>
-		<script type="module" src="./main.js"></script>
+		<script type="module" src="./drag-n-drop.js"></script>
 	</body>
 </html>
