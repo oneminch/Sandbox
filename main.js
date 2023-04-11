@@ -6,7 +6,7 @@ import axios from "axios";
 /* ====================== Homepage ====================== */
 
 const experiments = {
-	"css-tinker": ["css", "fundamentals", "content"],
+	"css-tinker": ["css", "fundamentals", "content", "hacks"],
 	"drag-n-drop": ["drag-and-drop", "vanilla-js", "windi-css"],
 	"landing-page": ["parallax", "lightbox"],
 	"random-jokes": ["petite-vue", "water-css", "humor-api"]

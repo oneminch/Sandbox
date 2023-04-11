@@ -294,6 +294,7 @@ h3::before {
 	margin: 0;
 	padding: 0.5rem 1.5rem;
 	box-sizing: border-box;
+	cursor: pointer;
 }
 
 #accordion label:first-of-type > div {
