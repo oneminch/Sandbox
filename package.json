@@ -17,7 +17,7 @@
 		"windicss": "^3.5.1"
 	},
 	"dependencies": {
-		"axios": "^0.26.1",
+		"axios": "^1.6.0",
 		"locomotive-scroll": "^4.1.4",
 		"petite-vue": "^0.4.1",
 		"sal.js": "^0.8.5"
