@@ -4,7 +4,7 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
 	plugins: [WindiCSS()],
-	base: "/playground/",
+	base: "/Playground/",
 	build: {
 		rollupOptions: {
 			input: {
