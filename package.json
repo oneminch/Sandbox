@@ -12,7 +12,7 @@
 		"url": "https://github.com/oneminch/tinkers"
 	},
 	"devDependencies": {
-		"vite": "^2.9.18",
+		"vite": "^5.4.6",
 		"vite-plugin-windicss": "^1.9.0",
 		"windicss": "^3.5.1"
 	},
