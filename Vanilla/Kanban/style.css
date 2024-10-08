@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	@apply flex items-center justify-center w-full h-screen;
+}
+
+#app {
+	font-family: Avenir, Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	@apply flex justify-evenly;
+}
+
+h3 {
+	@apply mb-2 font-mono font-bold;
+}
+
+.dropzone {
+	@apply flex flex-col items-center justify-start w-64 pt-4 pb-4 mr-6 bg-gray-100 border border-gray-300 border-solid rounded-lg min-h-60 hover:bg-gray-200;
+}
+
+.card {
+	@apply w-10/12 flex justify-start items-center p-4 text-gray-700 font-semibold font-mono h-12 m-2 bg-gray-50 border border-solid border-gray-300 cursor-move rounded-md shadow-sm !important;
+}

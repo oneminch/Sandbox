@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css" />
+		<title>Random Jokes (Petite Vue)</title>
+	</head>
+	<body>
+		<div id="random-jokes" v-scope>
+			<div @vue:mounted="fetchNewJoke">
+				<blockquote v-if="showQuote">{{joke}}</blockquote>
+				<button @click="fetchNewJoke">New Random Joke</button>
+			</div>
+
+			<dialog open v-if="modal">
+				<p>Error has occured!</p>
+				<form method="dialog">
+					<button @click="hideModal">Ok</button>
+				</form>
+			</dialog>
+		</div>
+
+		<script type="module" src="./main.js"></script>
+	</body>
+</html>

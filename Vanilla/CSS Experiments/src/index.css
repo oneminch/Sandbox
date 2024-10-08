@@ -1,0 +1,53 @@
+* {
+	transition: all 0.3s;
+	font-weight: 500;
+}
+
+body {
+	width: 85%;
+	font-family: "Space Grotesk", serif !important;
+	/* background: #000; */
+	margin: 0 auto;
+	padding-bottom: 2rem;
+}
+
+:root {
+	--background-body: floralwhite !important;
+	--green-color: #00fa9a;
+	--blue-color: #1e90ff;
+	--purple-color: #7b68ee;
+	--pink-color: #ff69b4;
+	--red-color: #dc143c;
+	--orange-color: #ffa500;
+	--yellow-color: #ffd700;
+
+	--dark-color: #202b38;
+	--paper-edge-radius: 10px;
+}
+
+h2,
+h3 {
+	position: relative;
+}
+
+h2::before,
+h3::before {
+	content: "#";
+	position: absolute;
+	margin-left: -1.5rem;
+	color: var(--blue-color);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background-body: #202b38 !important;
+	}
+}
+
+details > summary {
+	list-style-type: "\25E5  ";
+}
+
+details[open] > summary {
+	list-style-type: "\25E2  ";
+}

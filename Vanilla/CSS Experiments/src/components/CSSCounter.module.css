@@ -1,0 +1,14 @@
+.css-counters > ul li::after {
+	content: counter(list-item);
+	padding: 2.5px;
+	border-radius: 50%;
+	background-color: #fff;
+	color: #000;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 7.5px;
+	width: 10px;
+	height: 10px;
+	font-size: 0.75rem;
+}

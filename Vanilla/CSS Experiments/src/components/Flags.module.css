@@ -1,0 +1,74 @@
+.cameroon-flag,
+.ethiopian-flag,
+.sudan-flag {
+	width: 150px;
+	height: 100px;
+	position: relative;
+	border-radius: 2.5px;
+	overflow: hidden;
+}
+
+.ethiopian-flag {
+	background-color: gold;
+}
+
+.ethiopian-flag::before,
+.ethiopian-flag::after {
+	content: "";
+	width: 100%;
+	height: 33%;
+	position: absolute;
+	left: 0;
+}
+
+.ethiopian-flag::before {
+	top: 0;
+	background-color: forestgreen;
+}
+
+.ethiopian-flag::after {
+	bottom: 0;
+	background-color: red;
+}
+
+.sudan-flag {
+	margin-top: 50px;
+	background: linear-gradient(#d21034 33%, #fff 33% 66%, #000 33%);
+}
+
+.sudan-flag::before {
+	content: "";
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-bottom: 50px solid transparent;
+	border-left: 50px solid #007229;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	transform: translateY(-50%);
+}
+
+.cameroon-flag {
+	margin-top: 50px;
+	background: linear-gradient(
+		to right,
+		#007a5e 33%,
+		#ce1126 33% 66%,
+		#fcd116 33%
+	);
+}
+
+.cameroon-flag::before {
+	content: " \272D";
+	font-size: 2rem;
+	width: 100%;
+	text-align: center;
+	color: #fcd116;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	transform: translateY(-50%);
+}

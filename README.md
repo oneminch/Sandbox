@@ -1,6 +1,10 @@
-# Miscellaneous
+# Sandbox
 
-Various micro experiments with fundamental web technologies and some external tools.
+Small experiments with different web technologies and tools.
 
-- [Drag and Drop](./drag-n-drop/)
-- [Landing Page](./landing-page/)
+## Experiments
+
+- [Kanban (Drag and Drop API)](./Vanilla/Kanban/)
+- [Random Jokes (Petite Vue)](./Random%20Jokes/)
+- [Vanilla CSS Experiments](./Vanilla/CSS%20Experiments/)
+- [Weather Service (Nuxt + SSE)](./Weather%20Service/)

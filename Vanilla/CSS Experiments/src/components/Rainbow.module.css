@@ -1,0 +1,21 @@
+.rainbow {
+	width: 100%;
+	height: 25px;
+	margin: 0 auto;
+	background: linear-gradient(
+		to right,
+		var(--green-color) 7.5%,
+		var(--blue-color) 7.5% 15%,
+		var(--purple-color) 15% 22.5%,
+		var(--pink-color) 22.5% 30%,
+		var(--red-color) 30% 37.5%,
+		var(--orange-color) 37.5% 45%,
+		var(--yellow-color) 45% 55%,
+		var(--orange-color) 55% 62.5%,
+		var(--red-color) 62.5% 70%,
+		var(--pink-color) 70% 77.5%,
+		var(--purple-color) 77.5% 85%,
+		var(--blue-color) 85% 92.5%,
+		var(--green-color) 92.5% 100%
+	);
+}

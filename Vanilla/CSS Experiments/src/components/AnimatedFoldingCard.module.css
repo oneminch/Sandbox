@@ -1,0 +1,33 @@
+.paper {
+	width: 150px;
+	height: 150px;
+	display: block;
+	background-color: palegreen;
+	border-radius: var(--paper-edge-radius);
+	position: relative;
+	background-image: url("/earth.png");
+	background-repeat: no-repeat;
+	background-size: 100px;
+	background-position: center;
+}
+
+.paper::before {
+	content: "";
+	transition: border-width 0.2s linear;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-radius: var(--paper-edge-radius) 0 0 0;
+	border-width: 0;
+	border-color: honeydew var(--background-body) var(--background-body)
+		var(--background-body);
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	display: block;
+	box-shadow: -2.5px -2.5px 2.5px #0000000f;
+}
+
+.paper:hover::before {
+	border-width: 50px 50px 0 0;
+}
