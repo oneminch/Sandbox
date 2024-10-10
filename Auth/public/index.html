@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" href="style.css" />
+		<title>Auth Demo</title>
+	</head>
+	<body class="max-w-3xl mx-auto space-y-6">
+		<header class="flex sm:flex-row flex-col sm:items-start sm:justify-between">
+			<hgroup>
+				<h1 class="text-4xl">Auth Demo</h1>
+				<p>Simple demo of various auth methods.</p>
+			</hgroup>
+
+			<nav>
+				<ul>
+					<li><a href="#basic">Basic Auth</a></li>
+					<li><a href="#session">Session Auth</a></li>
+					<!-- <li><a href="#oauth">OAuth</a></li>
+					<li><a href="#oidc">OpenID Connect</a></li> -->
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section id="basic">
+				<h2 class="text-2xl">Basic Auth</h2>
+				<a href="/auth/basic" class="inline-block mt-4">Go to Account &rarr;</a>
+			</section>
+
+			<br />
+			<section id="session">
+				<h2 class="text-2xl">Session Auth</h2>
+				<form action="/auth/session/login" method="post">
+					<label for="session-username">
+						<p>Username:</p>
+						<input
+							type="text"
+							name="sessionUsername"
+							id="session-username"
+							required />
+					</label>
+					<label for="session-pwd">
+						<p>Password:</p>
+						<input
+							type="password"
+							name="sessionPassword"
+							id="session-pwd"
+							required />
+					</label>
+					<button type="submit">Log In</button>
+				</form>
+			</section>
+			<!-- 
+			<br />
+			<section id="oauth">
+				<h2 class="text-2xl">OAuth</h2>
+				<form action="/auth/oauth" method="post">
+					<button type="submit">Log In with Google</button>
+				</form>
+			</section>
+
+			<br />
+      
+			<section id="oidc">
+				<h2 class="text-2xl">OpenID Connect</h2>
+				<form action="/auth/oidc" method="post">
+					<button type="submit">Log In</button>
+				</form>
+			</section> -->
+		</main>
+	</body>
+</html>

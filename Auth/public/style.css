@@ -1,0 +1,18 @@
+* {
+	font-family: monospace;
+}
+
+a {
+	text-decoration: underline lightgreen !important;
+	font-weight: bold;
+}
+
+h1,
+h2,
+h3 {
+	font-weight: bold !important;
+}
+
+h2 {
+	margin-bottom: 1.25rem !important;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<title>Your Account</title>
+	</head>
+	<body>
+		<main class="max-w-lg mx-auto text-center space-y-6">
+			<h1 class="text-4xl">Your Account</h1>
+			<p>You have successfully logged in.</p>
+			<form action="/auth/session/logout" method="post">
+				<button type="submit">Log Out</button>
+			</form>
+		</main>
+	</body>
+</html>

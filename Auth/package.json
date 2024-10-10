@@ -1,0 +1,19 @@
+{
+	"name": "auth-demo",
+	"version": "1.0.0",
+	"description": "Demo of various auth methods",
+	"main": "index.js",
+	"scripts": {
+		"start": "nodemon index.js"
+	},
+	"license": "ISC",
+	"dependencies": {
+		"body-parser": "^1.20.3",
+		"cors": "^2.8.5",
+		"express": "^4.21.1",
+		"express-session": "^1.18.1"
+	},
+	"devDependencies": {
+		"nodemon": "^3.1.7"
+	}
+}
