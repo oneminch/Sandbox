@@ -7,7 +7,7 @@
 		"serve": "vite preview"
 	},
 	"devDependencies": {
-		"vite": "^2.9.16"
+		"vite": "^5.4.9"
 	},
 	"dependencies": {
 		"alpinejs": "^3.10.5",
