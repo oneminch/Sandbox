@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/assets/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css">
+		<link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=inter:400,700&display=swap" rel="stylesheet" />
+		<title>FreeToGame Search</title>
+	</head>
+	<body class="bg-gray-700">
+		<div
+			id="app"
+			class="w-11/12 max-w-9xl mx-auto pb-8 transition-all duration-200"
+			x-data="app"
+		>
+			<form class="w-full my-10 <sm:px-2" @submit.prevent="search">
+				<input
+					type="text"
+					x-model="query"
+					placeholder="Enter game info"
+					class="
+						w-80
+						<sm:w-full <sm:text-center
+						h-11
+						py-2
+						px-4
+						mr-1
+						text-white
+						bg-gray-600
+						font-semibold
+						rounded-md
+						outline-none
+						focus:ring-2
+						ring-teal-400 ring-opacity-50 ring-offset-0
+					"
+				/>
+				<button
+					type="submit"
+					class="
+						w-22
+						<sm:w-full <sm:mt-2 <sm:text-center
+						h-11
+						p-2
+						font-semibold
+						rounded-md
+						text-white
+						bg-teal-500
+						hover:bg-teal-600
+						focus:outline-none focus:ring-2
+						ring-teal-400 ring-opacity-50 ring-offset-0
+					"
+				>
+					Search
+				</button>
+			</form>
+
+			<hr
+				class="
+					w-120
+					<sm:w-10/12
+					rounded-md
+					border-2
+					mx-auto
+					my-6
+					border-gray-600
+				"
+			/>
+
+			<!-- List of Results -->
+			<div class="w-full rounded-lg mx-auto px-2">
+				<!-- Initial page -->
+				<div
+					x-show="initialDesc"
+					class="
+						w-120
+						@sm:w-9/12
+						<sm:w-full
+						min-h-72
+						mt-8
+						px-4
+						py-6
+						box-border
+						flex flex-col
+						items-center
+						justify-center
+						rounded-xl
+						bg-gray-600
+						text-gray-400
+						mx-auto
+					"
+				>
+					<h1 class="text-2xl font-extrabold mb-3">
+						Search Free Games
+					</h1>
+					<p>Find the best free-to-play games!</p>
+					<hr
+						class="
+							w-1/2
+							rounded-md
+							border-1
+							mx-auto
+							my-4
+							border-gray-500
+						"
+					/>
+					<p class="mb-3 font-bold">Powered By</p>
+					<img
+						class="w-16 mb-3"
+						src="/assets/freetogame-logo.png"
+						alt="FreeToGame Logo"
+					/>
+					<a
+						class="
+							px-5
+							py-1
+							rounded-full
+							text-sm
+							font-semibold
+							text-gray-100
+							bg-gray-500
+							outline-none
+							focus:ring-2
+							ring-teal-400 ring-opacity-50 ring-offset-0
+						"
+						href="https://www.freetogame.com/api-doc"
+						>FreeToGame API</a
+					>
+				</div>
+
+				<template x-for="(result, index) in results" :key="index">
+					<!-- Result -->
+					<a
+						:href="result.game_url"
+						target="_blank"
+						rel="noopener"
+						class="
+							w-84
+							@sm:w-9/12
+							<sm:w-full
+							mb-2
+							mr-2
+							min-h-28
+							border-2 border-gray-600
+							rounded-xl
+							overflow-hidden
+							inline-flex
+							flex-col
+							items-start
+							justify-start
+							flex-shrink-0 flex-grow-0
+							outline-none
+							focus:ring-2
+							ring-teal-400 ring-opacity-50 ring-offset-0
+						"
+					>
+						<img
+							class="
+								block
+								w-full
+								h-44
+								object-cover
+								rounded-t-lg
+								bg-gray-100
+								overflow-hidden
+								flex-shrink-0 flex-grow-0
+							"
+							:src="result.thumbnail"
+							alt="Game Thumbnail"
+						/>
+						<div
+							class="
+								p-4
+								flex flex-col
+								text-white
+								items-start
+								justify-start
+							"
+						>
+							<p
+								class="font-extrabold text-lg text-left mb-2"
+								x-text="result.title"
+							></p>
+							<p
+								class="text-md text-left mb-2"
+								x-text="result.short_description"
+							></p>
+							<div class="mb-2">
+								<span
+									class="
+										float-left
+										py-1
+										px-3
+										mr-1
+										rounded-full
+										text-xs
+										bg-gray-600
+										text-white
+										font-semibold
+									"
+									:title="result.platform"
+									x-text="result.platform"
+								></span>
+								<span
+									class="
+										float-left
+										py-1
+										px-3
+										mr-1
+										rounded-full
+										text-xs
+										bg-gray-600
+										text-white
+										font-semibold
+									"
+									:title="result.genre"
+									x-text="result.genre"
+								></span>
+							</div>
+							<table class="w-full mt-2">
+								<tbody>
+									<tr class="border-b-1 border-b-teal-300">
+										<td
+											class="
+												font-medium
+												text-gray-400 text-left
+												py-2
+											"
+										>
+											Developer
+										</td>
+										<td
+											class="
+												text-right
+												font-semibold
+												py-2
+											"
+											x-text="result.developer"
+										></td>
+									</tr>
+									<tr class="border-b-1 border-b-teal-300">
+										<td
+											class="
+												font-medium
+												text-gray-400 text-left
+												py-2
+											"
+										>
+											Publisher
+										</td>
+										<td
+											class="
+												text-right
+												font-semibold
+												py-2
+											"
+											x-text="result.publisher"
+										></td>
+									</tr>
+									<tr>
+										<td
+											class="
+												font-medium
+												text-gray-400 text-left
+												py-2
+											"
+										>
+											Release Date
+										</td>
+										<td
+											class="
+												text-right
+												font-semibold
+												py-2
+											"
+											x-text="result.release_date"
+										></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</a>
+				</template>
+			</div>
+		</div>
+		<script type="module" src="/main.js"></script>
+	</body>
+</html>
