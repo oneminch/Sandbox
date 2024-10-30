@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES2018",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "allowJs": true,
+    "strict": true,
+    "declaration": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "outDir": "./dist"
+    // "lib": ["ESNext", "ESNext.AsyncIterable", "DOM"],
+    // "sourceMap": false,
+    // "paths": {
+    //   "~/*": ["./*"],
+    //   "@/*": ["./*"]
+    // }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}

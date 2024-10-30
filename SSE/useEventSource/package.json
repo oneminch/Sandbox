@@ -1,0 +1,29 @@
+{
+  "name": "@minch/use-event-source",
+  "version": "1.0.0",
+  "description": "A Nuxt 3 composable for simplifying Server-Sent Events.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "nuxt",
+    "composable",
+    "typescript",
+    "server-sent-events"
+  ],
+  "author": "Dawit (@oneminch)",
+  "license": "MIT",
+  "peerDependencies": {
+    "nuxt": "^3.0.0",
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  },
+  "repository": {
+    "url": "https://github.com/oneminch/Sandbox"
+  }
+}
