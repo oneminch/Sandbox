@@ -7,7 +7,7 @@ It is based on the standard `EventSource` interface, and makes working with SSEs
 ## Installation
 
 ```
-npm install @oneminch/use-event-source
+npm install @minch/use-event-source
 ```
 
 ## Usage
@@ -57,7 +57,7 @@ Consume events from any page:
 ```vue
 // ~/app.vue (or any page / component)
 <script setup lang="ts">
-  import { useEventSource } from "@oneminch/use-event-source";
+  import { useEventSource } from "@minch/use-event-source";
 
   const { eventData, restartConnection, closeConnection, isStopped } =
     useEventSource("/api/counter", 0);
