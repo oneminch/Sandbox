@@ -106,3 +106,4 @@ typings/
 *.code-workspace
 
 dist/
+temp/
