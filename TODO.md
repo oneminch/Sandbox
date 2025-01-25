@@ -52,6 +52,7 @@
 - Hono
 - Jenkins
 - Local-First
+  - Integrate with Deadlines
   - ElectricSQL
     - PGLite
   - PouchDB
@@ -130,6 +131,7 @@
 - Coolify
 - Neon
 - Supabase
+- SST
 
 ## Resources
 
