@@ -9,37 +9,56 @@
 - Backend: Rate limiting
 - Gradient Borders
 - Nuxt: Auth
+  - @sidebase/nuxt-auth
+  - nuxt-auth-utils
+  - better-auth
+  - Clerk SDK
 - Nuxt: Chat App (w/ WebSockets)
+- Nuxt: Self-Hosted (w/ Docker)
+  - https://markus.oberlehner.net/blog/running-nuxt-3-in-a-docker-container/
+  - https://nuxt.com/docs/getting-started/deployment#nodejs-server
 - Pattern: Carousel / Image Gallery
 - Pattern: Infinite scroll pagination
   - [The Easiest Way to Infinite Scroll with React](https://www.youtube.com/watch?v=nR85ayDEVBc)
 - Pattern: Multi-step forms
 - Pattern: Optimistic updates
 - Pattern: Search Autocomplete
+- PWAs (Simple)
+- Reactive LocalStorage
 - React: Custom SSR
 - Recipes: Animated Typing using `setInterval` / `setTimeout`
 - Recipes: Magnified Dock
 - Recipes: Stripe / Vercel / Revature Navigation
+- RSS / Newsletter Reader (Proof of Concept)
 - Tailwind CSS: Theming
+- Vue: Clerk SDK
 - Vue: Custom SSR
 - Vue: Teleports (Toasts)
 
 ## Demo
 
+- ASP.NET Core
+- Better Auth
+- CMS: Sanity
 - CMS: Strapi
 - CMS: Wordpress
   - withNuxt()
 - Deno
 - Django
+- Drizzle
 - Framer Motion
-- GSAP
+- Ghost
+- GSAP / Motion
 - Hono
+- Jenkins
 - Local-First
   - ElectricSQL
     - PGLite
   - PouchDB
   - TinyBase
+  - Triplit
   - Replicache
+  - Zero Sync
 - Medusa
 - Nuxt (Features)
   - Layers
@@ -48,11 +67,20 @@
   - Server Components
   - Nuxt UI
   - NuxtHub
+  - Pruvious
+- OpenAuth
 - OpenNext
 - Pagefind
 - Pico CSS
 - PocketBase
-- React: Shadcn/ui
+- React
+  - Base UI
+  - MUI
+  - NextUI
+  - nuqs
+  - React Aria
+  - Redux / Zustand
+  - Shadcn/ui
 - Redis
 - Render.com
 - Spring Boot
@@ -60,11 +88,15 @@
 - SST
   - [Deploying Next.js on the edge with SST (Udacity Eng & Data)](https://engineering.udacity.com/deploying-next-js-on-the-edge-with-sst-is-sst-the-game-changer-its-claimed-to-be-1f05a0abc27c)
 - Storybook
+- Stripe
 - UnoCSS
-- Vue: Pinia + Colada
-- Vue: Radix Vue / Reka UI
-- Vue: shadcn/vue
-- Web API: IndexedDB
+- Vue
+  - Pinia + Colada
+  - Radix Vue / Reka UI
+  - shadcn/vue
+  - TanStack Vue Query
+  - Vue Router
+- Web API: IndexedDB (w/ Reactivity)
 - Web API: Intersection Observer
 - Web API: WebSockets
 - Web API: Web Notifications
@@ -93,9 +125,13 @@
   - Code Pipeline
 -   SageMaker
 - Azure Functions
+- bknd.io
 - Cloudflare (Dev Platform)
+- Coolify
 - Neon
+- Supabase
 
 ## Resources
 
+- [DevSuite](https://devsuite.co/)
 - [TechStackFinder](https://techstackfinder.com/browse/web)
