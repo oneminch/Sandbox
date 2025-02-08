@@ -2,4 +2,4 @@
 
 A simple stacking toast component using Vue.
 
-![Demo](/public/vue-toast.gif)
+![Demo](./public/vue-toast.gif)
