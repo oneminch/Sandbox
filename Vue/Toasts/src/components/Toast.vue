@@ -1,8 +1,13 @@
 <script setup lang="ts">
-import { computed, inject } from "vue";
+import { computed, inject, type Ref } from "vue";
 import type { ToastProps } from "@/App.vue";
 
-const { toasts, clearToast } = inject<ToastProps[]>("toasts", []);
+interface ToastInjection {
+	toasts: Ref<ToastProps[]>;
+	clearToast: (id: string) => void;
+}
+
+const { toasts, clearToast } = inject<ToastInjection>("toasts")!;
 
 const numToasts = computed(() => toasts.value.length);
 </script>
@@ -23,7 +28,7 @@ const numToasts = computed(() => toasts.value.length);
 								  })`
 					}"
 					:class="[
-						'transform transition-all duration-300 fixed bottom-8 right-8 px-8 py-4 w-72 rounded-md bg-zinc-700 text-zinc-200 border border-zinc-600 overflow-hidden',
+						'transform transition-all duration-300 fixed bottom-8 right-8 px-8 py-4 w-72 rounded-md backdrop-blur-md bg-zinc-700/50 text-zinc-200 border border-zinc-600 overflow-hidden',
 						{ 'visible opacity-100': numToasts > 0 },
 						{
 							'invisible! opacity-0!': numToasts === 0 || index < numToasts - 3
@@ -59,6 +64,6 @@ const numToasts = computed(() => toasts.value.length);
 }
 
 .toast-move {
-	transition: transform 0.5s;
+	transition: transform 0.3s;
 }
 </style>

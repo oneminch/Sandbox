@@ -1,6 +1,6 @@
 <script lang="ts">
 export interface ToastProps {
-	id: number;
+	id: string;
 	content: string;
 }
 </script>
