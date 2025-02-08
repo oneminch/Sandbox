@@ -7,7 +7,6 @@
   - https://cv.jarocki.me
 - Auth: OAuth & OpenID Connect
 - Backend: Rate limiting
-- Gradient Borders
 - Nuxt: Auth
   - @sidebase/nuxt-auth
   - nuxt-auth-utils
@@ -25,7 +24,9 @@
 - Pattern: Search Autocomplete
 - PWAs (Simple)
 - Reactive LocalStorage
-- React: Custom SSR
+- React
+  - Custom SSR
+  - Full-Stack v19 w/o Next.js
 - Recipes: Animated Typing using `setInterval` / `setTimeout`
 - Recipes: Magnified Dock
 - Recipes: Stripe / Vercel / Revature Navigation
@@ -33,7 +34,6 @@
 - Tailwind CSS: Theming
 - Vue: Clerk SDK
 - Vue: Custom SSR
-- Vue: Teleports (Toasts)
 
 ## Demo
 
@@ -64,7 +64,7 @@
 - Nuxt (Features)
   - Layers
   - Transitions
-      - View Transitions API
+    - View Transitions API
   - Server Components
   - Nuxt UI
   - NuxtHub
@@ -72,6 +72,8 @@
 - OpenAuth
 - OpenNext
 - Pagefind
+- PHP
+  - Laravel
 - Pico CSS
 - PocketBase
 - React
@@ -83,6 +85,7 @@
   - Redux / Zustand
   - Shadcn/ui
 - Redis
+- Remix
 - Render.com
 - Spring Boot
 - SQLite: Litestream
@@ -124,7 +127,7 @@
   - CloudWatch
   - DynamoDB
   - Code Pipeline
--   SageMaker
+- SageMaker
 - Azure Functions
 - bknd.io
 - Cloudflare (Dev Platform)
