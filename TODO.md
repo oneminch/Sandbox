@@ -95,6 +95,7 @@
 - Stripe
 - UnoCSS
 - Vue
+  - Inspira UI
   - Pinia + Colada
   - Radix Vue / Reka UI
   - shadcn/vue
