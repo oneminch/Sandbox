@@ -95,12 +95,11 @@
 - Stripe
 - UnoCSS
 - Vue
-  - Inspira UI
   - Pinia + Colada
+  - Vue Router
   - Radix Vue / Reka UI
   - shadcn/vue
-  - TanStack Vue Query
-  - Vue Router
+  - Inspira UI
 - Web API: IndexedDB (w/ Reactivity)
 - Web API: Intersection Observer
 - Web API: WebSockets
