@@ -3,8 +3,10 @@
 ## Code
 
 - AI: Text Streams (AI Output)
-- `app.config`: CV / Portfolio
-  - https://cv.jarocki.me
+- `app.config`
+  - CV / Portfolio
+    - https://cv.jarocki.me
+  - Link In Bio (Animated)
 - Auth: OAuth & OpenID Connect
 - Backend: Rate limiting
 - Nuxt: Auth
@@ -100,6 +102,7 @@
   - Radix Vue / Reka UI
   - shadcn/vue
   - Inspira UI
+  - TresJS
 - Web API: IndexedDB (w/ Reactivity)
 - Web API: Intersection Observer
 - Web API: WebSockets
@@ -135,6 +138,7 @@
 - Neon
 - Supabase
 - SST
+- Windscript
 
 ## Resources
 
