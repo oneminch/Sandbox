@@ -103,6 +103,7 @@
   - shadcn/vue
   - Inspira UI
   - TresJS
+  - swrv
 - Web API: IndexedDB (w/ Reactivity)
 - Web API: Intersection Observer
 - Web API: WebSockets
