@@ -39,6 +39,7 @@
 
 ## Demo
 
+- AdonisJS
 - ASP.NET Core
 - Better Auth
 - CMS: Sanity
@@ -104,6 +105,7 @@
   - Inspira UI
   - TresJS
   - swrv
+  - w/ Laravel
 - Web API: IndexedDB (w/ Reactivity)
 - Web API: Intersection Observer
 - Web API: WebSockets
@@ -136,7 +138,9 @@
 - bknd.io
 - Cloudflare (Dev Platform)
 - Coolify
+- Fly.io
 - Neon
+- Prisma Postgres
 - Supabase
 - SST
 - Windscript
